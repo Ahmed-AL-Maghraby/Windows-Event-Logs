@@ -33,3 +33,16 @@ in grograss
 | Information | An event that describes the successful operation of an application, driver, or service. For example, when a network driver loads successfully, it may be appropriate to log an Information event. Note that it is generally inappropriate for a desktop application to log an event each time it starts. |
 | Success Audit	 | An event that records an audited security access attempt that is successful. For example, a user's successful attempt to log on to the system is logged as a Success Audit event. |
 | Failure Audit	 | An event that records an audited security access attempt that fails. For example, if a user tries to access a network drive and fails, the attempt is logged as a Failure Audit event. |
+
+<br> <br> <br>
+
+## Event ID
+
++ This is a predefined numerical value that maps to a specific operation or event based on the log source. This makes Event IDs not unique
+
+
+
+
+
+
+
