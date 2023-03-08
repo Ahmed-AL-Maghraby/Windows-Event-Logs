@@ -45,6 +45,7 @@ Event ID 1: Process Creation
 Event ID 3: Network Connection
 Event ID 7: Image Loaded
 Event ID 8: CreateRemoteThread
+Event ID 10 :process opens another process
 Event ID 11: File Created
 Event ID 12 / 13 / 14: Registry Event
 Event ID 15: FileCreateStreamHash
