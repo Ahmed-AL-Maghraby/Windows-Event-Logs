@@ -41,6 +41,19 @@ in grograss
 + This is a predefined numerical value that maps to a specific operation or event based on the log source. This makes Event IDs not unique
 
 
+Event ID 1: Process Creation
+Event ID 3: Network Connection
+Event ID 7: Image Loaded
+Event ID 8: CreateRemoteThread
+Event ID 11: File Created
+Event ID 12 / 13 / 14: Registry Event
+Event ID 15: FileCreateStreamHash
+Event ID 22: DNS Event
+
+
+
+
+
 4624
 4625
 
