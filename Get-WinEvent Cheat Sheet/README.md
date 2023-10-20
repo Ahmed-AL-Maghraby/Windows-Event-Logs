@@ -18,3 +18,78 @@ Circular            20971520           0 HardwareEvents
 Circular            20971520        3522 Application
 
 ```
+
+
+## Get event log providers and log names
+
+```ps1
+PS C:\Users\devil> Get-WinEvent -ListProvider *
+
+Name     : VSTO 4.0
+LogLinks : {Application}
+Opcodes  : {}
+Tasks    : {}
+
+Name     : Microsoft-PerfTrack-MSHTML
+LogLinks : {Microsoft-PerfTrack-MSHTML/Diagnostic}
+Opcodes  : {win:Start, win:Stop}
+Tasks    : {Navigation, Scroll, Redirect, XSSFilter-RuleCheck...}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
