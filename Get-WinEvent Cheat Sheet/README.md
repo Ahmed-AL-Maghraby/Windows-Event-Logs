@@ -38,10 +38,36 @@ Tasks    : {Navigation, Scroll, Redirect, XSSFilter-RuleCheck...}
 ```
 
 
+## Log filtering
+
+```ps1
+PS C:\Users\devil> Get-WinEvent -LogName Application | Where-Object { $_.ProviderName -Match 'WLMS' }
+
+   ProviderName: WLMS
+
+TimeCreated                     Id LevelDisplayName Message
+-----------                     -- ---------------- -------
+6/21/2023 2:18:27 AM          100 Information
+6/18/2023 3:18:57 PM          100 Information
+6/15/2023 4:30:2 AM          100 Information
+6/15/2023 4:18:34 AM          100 Information
+```
+OR we can use ``FilterHashtable`` command
+
+```ps1
+Get-WinEvent -FilterHashtable @{
+  LogName='Application' 
+  ProviderName='WLMS' 
+}
+```
 
 
 
+## Command
 
+```ps1
+Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-PowerShell/Operational'; ID=4104} | Select-Object -Property Message | Select-String -Pattern 'SecureString'
+```
 
 
 
